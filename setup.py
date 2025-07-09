@@ -1,15 +1,16 @@
 from setuptools import setup
 
-APP = ['launcher.py']
+APP = ['launcher_gui.py']  # This should be your Python script that contains the GUI
 DATA_FILES = []
 OPTIONS = {
     'argv_emulation': True,
-    'iconfile': 'icon.icns',  # optional
-    'packages': [],
+    'packages': ['tkinter'],
     'plist': {
         'CFBundleName': 'Minecraft Server Launcher',
-        'CFBundleShortVersionString': '1.0',
-        'CFBundleIdentifier': 'com.jeadyce.minecraftlauncher',
+        'CFBundleDisplayName': 'Minecraft Server Launcher',
+        'CFBundleIdentifier': 'com.jeadyce.serverlauncher',
+        'CFBundleVersion': '0.1.0',
+        'LSUIElement': False  # Important: Set False so the app opens a window
     },
 }
 

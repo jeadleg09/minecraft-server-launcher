@@ -1,0 +1,12 @@
+# macOS and Python clutter
+.DS_Store
+__pycache__/
+*.pyc
+
+# App build artifacts
+build/
+dist/
+*.app
+
+# Mistaken folder (probably not needed)
+.fabric/
