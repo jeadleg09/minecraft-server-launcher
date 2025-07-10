@@ -1,6 +1,6 @@
 from setuptools import setup
 
-APP = ['launcher_gui.py']  # This should be your Python script that contains the GUI
+APP = ['filename.py']  # This should be your Python script that contains the GUI
 DATA_FILES = []
 OPTIONS = {
     'argv_emulation': True,
